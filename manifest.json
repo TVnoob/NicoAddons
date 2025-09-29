@@ -1,0 +1,36 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "beta-version(0.1.0)",
+        "name": "DeathSwap",
+        "uuid": "17122ab1-9885-4a44-9f24-cd55bc7011ef", 
+        "version": [ 0, 1, 0 ],
+        "min_engine_version": [ 1, 18, 10 ]
+    },
+    "modules": [
+        {
+            "description": "Create by Delta_Conveyor",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "d1a7b453-7244-419b-a567-b25d32f52f64",
+            "entry": "scripts/main.js",
+            "version": [0, 1, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "0448eca8-e3b9-4dd4-9f5d-afdb6ee30300",
+            "version": [0, 1, 0]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.2.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.1.0-beta"
+        }
+      ],
+      
+    "capabilities": ["script_eval","client_forms"]   
+}
