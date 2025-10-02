@@ -5,7 +5,7 @@
 - - /scriptevent nico:cards
 - - /scriptevent nico:kinnsi
 ## 追加済み能力
-- 切り札
+- 切り札(重大な欠陥が判明　→ .name使用不可)
 ## scripts
 > 例外 - lib
 ### systems
