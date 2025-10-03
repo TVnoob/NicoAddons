@@ -1,0 +1,41 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "nico:poker_hopper",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {"family": ["monster"]},
+      "minecraft:container": {
+        "custom_name": "ポーカーテーブル",
+        "inventory_size": 5,
+        "can_be_siphoned_from": true,
+        "private": false,
+        "restrict_to_owner": false
+      },
+      "minecraft:collision_box": {"width": 0.5, "height": 0.5},
+      "minecraft:physics": {},
+      "minecraft:movement.basic": {},
+      "minecraft:health": {"value": 1, "max": 1},
+      "minecraft:despawn": {},
+      "minecraft:interact": [
+        {
+          "on_interact": {
+            "event": "open_inventory"
+          },
+          "interact_text": "ポーカーをセット"
+        }
+      ]
+    },
+    "events": {
+      "open_inventory": {
+        "run_command": {
+          "command": ["event entity @s open_inventory"]
+        }
+      }
+    }
+  }
+}
